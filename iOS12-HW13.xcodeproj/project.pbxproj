@@ -12,16 +12,22 @@
 		BF5298192B9DF19400D2EE30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5298182B9DF19400D2EE30 /* ViewController.swift */; };
 		BF52981E2B9DF19500D2EE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF52981D2B9DF19500D2EE30 /* Assets.xcassets */; };
 		BF5298212B9DF19500D2EE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF52981F2B9DF19500D2EE30 /* LaunchScreen.storyboard */; };
+		BF5298312B9F2B0E00D2EE30 /* TabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5298302B9F2B0E00D2EE30 /* TabelViewCell.swift */; };
+		BF5298352B9F2BA300D2EE30 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5298342B9F2BA300D2EE30 /* Model.swift */; };
+		BFCB77002BA095D300B4DF41 /* SwithTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB76FF2BA095D300B4DF41 /* SwithTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF5298112B9DF19400D2EE30 /* iOS12-HW13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS12-HW13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5298112B9DF19400D2EE30 /* iOS12-HW13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "iOS12-HW13.app"; path = "/Users/shadow/Desktop/Обучение/Проекты/iOS12-HW13/build/Debug-iphoneos/iOS12-HW13.app"; sourceTree = "<absolute>"; };
 		BF5298142B9DF19400D2EE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5298162B9DF19400D2EE30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF5298182B9DF19400D2EE30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF52981D2B9DF19500D2EE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5298202B9DF19500D2EE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5298222B9DF19500D2EE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5298302B9F2B0E00D2EE30 /* TabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelViewCell.swift; sourceTree = "<group>"; };
+		BF5298342B9F2BA300D2EE30 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BFCB76FF2BA095D300B4DF41 /* SwithTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwithTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,16 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5298132B9DF19400D2EE30 /* iOS12-HW13 */,
-				BF5298122B9DF19400D2EE30 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		BF5298122B9DF19400D2EE30 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BF5298112B9DF19400D2EE30 /* iOS12-HW13.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BF5298132B9DF19400D2EE30 /* iOS12-HW13 */ = {
@@ -74,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5298182B9DF19400D2EE30 /* ViewController.swift */,
+				BF5298362B9F2BA800D2EE30 /* CustomModul */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -86,6 +84,16 @@
 				BF5298222B9DF19500D2EE30 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF5298362B9F2BA800D2EE30 /* CustomModul */ = {
+			isa = PBXGroup;
+			children = (
+				BF5298302B9F2B0E00D2EE30 /* TabelViewCell.swift */,
+				BFCB76FF2BA095D300B4DF41 /* SwithTableViewCell.swift */,
+				BF5298342B9F2BA300D2EE30 /* Model.swift */,
+			);
+			path = CustomModul;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +112,8 @@
 			dependencies = (
 			);
 			name = "iOS12-HW13";
+			packageProductDependencies = (
+			);
 			productName = "iOS12-HW13";
 			productReference = BF5298112B9DF19400D2EE30 /* iOS12-HW13.app */;
 			productType = "com.apple.product-type.application";
@@ -132,7 +142,9 @@
 				Base,
 			);
 			mainGroup = BF5298082B9DF19400D2EE30;
-			productRefGroup = BF5298122B9DF19400D2EE30 /* Products */;
+			packageReferences = (
+			);
+			productRefGroup = BF5298082B9DF19400D2EE30;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -159,6 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5298192B9DF19400D2EE30 /* ViewController.swift in Sources */,
+				BF5298312B9F2B0E00D2EE30 /* TabelViewCell.swift in Sources */,
+				BF5298352B9F2BA300D2EE30 /* Model.swift in Sources */,
+				BFCB77002BA095D300B4DF41 /* SwithTableViewCell.swift in Sources */,
 				BF5298152B9DF19400D2EE30 /* AppDelegate.swift in Sources */,
 				BF5298172B9DF19400D2EE30 /* SceneDelegate.swift in Sources */,
 			);
@@ -321,6 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -351,6 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
