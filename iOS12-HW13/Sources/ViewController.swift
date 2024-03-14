@@ -56,6 +56,24 @@ class ViewController: UIViewController, UITableViewDelegate {
         ])
     }
 
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .systemGray6
+        NSLayoutConstraint.activate([
+            view.heightAnchor.constraint(equalToConstant: 17)
+        ])
+        return view
+    }
+
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .systemGray6
+        NSLayoutConstraint.activate([
+            view.heightAnchor.constraint(equalToConstant: 17)
+        ])
+        return view
+    }
+
     func configure() {
         models.append(Section(options: [
             .swithCell(model: SettingsSwithOption(
@@ -71,28 +89,28 @@ class ViewController: UIViewController, UITableViewDelegate {
                 icon: UIImage(systemName: "wifi"),
                 iconBackgroundColor: .systemBlue
             ){
-                print("Tapped")
+                print("Tapped Wi-Fi")
             }),
             .staticCell(model: SettingsOption(
                 title: "Bluetooth",
                 icon: UIImage(systemName: "bluetooth"),
                 iconBackgroundColor: .systemRed
             ){
-                print("Tapped")
+                print("Tapped Bluetooth")
             }),
             .staticCell(model: SettingsOption(
                 title: "Сотовая связь",
                 icon: UIImage(systemName: "antenna.radiowaves.left.and.right"),
                 iconBackgroundColor: .systemGreen
             ){
-                print("Tapped")
+                print("Tapped Сотовая связь")
             }),
             .staticCell(model: SettingsOption(
                 title: "Режим модема",
                 icon: UIImage(systemName: "personalhotspot"),
                 iconBackgroundColor: .systemGreen
             ){
-                print("Tapped")
+                print("Tapped Режим модема")
             }),
             .swithCell(model: SettingsSwithOption(
                 title: "VPN",
@@ -132,6 +150,78 @@ class ViewController: UIViewController, UITableViewDelegate {
             ){
                 print("Tapped")
             })
+        ]))
+        models.append(Section(options: [
+            .staticCell(model: SettingsOption(
+                title: "Основные", 
+                icon: UIImage(systemName: "gear"),
+                iconBackgroundColor: .systemGray
+                ){
+                    print("Tapped Основные")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Пункт управления",
+                icon: UIImage(systemName: ""),
+                iconBackgroundColor: .systemGray4
+                ){
+                    print("Tapped Пункт управления")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Экран и яркость",
+                icon: UIImage(systemName: "sun.max.fill"),
+                iconBackgroundColor: .systemBlue
+                ){
+                    print("Tapped Экран и яркость")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Экран <<Домой>>",
+                icon: UIImage(systemName: ""),
+                iconBackgroundColor: .systemGray4
+                ){
+                    print("Tapped <<Домой>>")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Универсальный доступ",
+                icon: UIImage(systemName: "figure.wave.circle"),
+                iconBackgroundColor: .systemBlue
+                ){
+                    print("Tapped Универсальный доступ")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Обои",
+                icon: UIImage(systemName: ""),
+                iconBackgroundColor: .systemGray4
+                ){
+                    print("Tapped Обои")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Ожидание",
+                icon: UIImage(systemName: ""),
+                iconBackgroundColor: .systemGray4
+                ){
+                    print("Tapped Ожидание")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Siri и Поиск",
+                icon: UIImage(systemName: ""),
+                iconBackgroundColor: .systemGray4
+                ){
+                    print("Tapped Siri и Поиск")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Face ID и код - пароль",
+                icon: UIImage(systemName: "faceid"),
+                iconBackgroundColor: .systemGreen
+                ){
+                    print("Tapped Face ID и код-пароль")
+                }),
+            .staticCell(model: SettingsOption(
+                title: "Экстренный вызов - SOS",
+                icon: UIImage(systemName: "sos"),
+                iconBackgroundColor: .systemRed
+                ){
+                    print("Tapped Обои")
+                }),
         ]))
     }
 }
