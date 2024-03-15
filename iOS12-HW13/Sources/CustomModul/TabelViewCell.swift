@@ -57,7 +57,7 @@ class TabelViewCell: UITableViewCell {
             height: size
         )
 
-        let imageSize: CGFloat = size / 1.2
+        let imageSize: CGFloat = size / 1.3
         iconImageView.frame = CGRect(
             x: (size - imageSize) / 2,
             y: (size - imageSize) / 2,

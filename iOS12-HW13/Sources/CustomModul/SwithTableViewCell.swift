@@ -36,6 +36,7 @@ class SwithTableViewCell: UITableViewCell {
     private lazy var mySwith: UISwitch = {
         let mySwith = UISwitch()
         mySwith.onTintColor = .systemBlue
+        mySwith.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
         return mySwith
     }()
 
@@ -100,5 +101,9 @@ class SwithTableViewCell: UITableViewCell {
         iconImageView.image = model.icon
         iconConteiner.backgroundColor = model.iconBackgroundColor
         mySwith.isOn = model.isOn
+    }
+
+    @objc private func valueChanged(sender: UISwitch) {
+        print("Switch в положении: \(sender.isOn ? "Включен" : "Выключен")")
     }
 }
